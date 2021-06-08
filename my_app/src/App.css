@@ -1,0 +1,94 @@
+.app-wrapper{
+  margin: 0 auto;
+  display: grid;
+  width: 1200px;
+  
+
+  grid-template-areas:"h h" "n  c" ;
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 3fr 10fr;
+  grid-gap:15px;
+
+}
+
+
+.header img{
+  margin-top:10px;
+  width:50px;
+}
+
+
+.header{
+  grid-area: h;
+
+  
+
+
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.0px );
+  -webkit-backdrop-filter: blur( 0.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+
+
+
+.nav{
+  
+  grid-area: n;
+
+  height: 800px;
+
+  font-family: 'Baloo Tammudu 2', cursive;
+
+  list-style: none;
+
+  font-size: 20px;
+
+  padding-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:white;
+
+ 
+
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.0px );
+  -webkit-backdrop-filter: blur( 0.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+.nav li:hover{
+  color:#79ccc9;
+  cursor:pointer;
+  font-size: 30px;
+}
+
+.content{
+  grid-area: c;
+
+  padding: 20px;
+
+
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.0px );
+  -webkit-backdrop-filter: blur( 0.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.content img{
+ width: 100%;
+ opacity: 0.8;
+ border-radius:10px;
+ 
+}
