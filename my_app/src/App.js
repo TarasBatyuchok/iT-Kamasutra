@@ -1,22 +1,19 @@
-import React from 'react'
+import React from "react";
 
-import './App.css';
-
+import "./App.css";
 
 // component
 
-import Header from "./Components/Header"
-import NavBar from "./Components/NavBar"
-import Profile from "./Components/Profile"
-
-
+import Header from "./Components/Header";
+import NavBar from "./Components/NavBar";
+import Profile from "./Components/Profile";
 
 function App() {
   return (
-     <div className="app-wrapper" >
-       <Header/>
-       <NavBar/>
-       <Profile/>
+    <div className="app-wrapper">
+      <Header />
+      <NavBar />
+      <Profile />
     </div>
   );
 }
