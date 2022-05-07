@@ -4,9 +4,9 @@ import "./App.css";
 
 // component
 
-import Header from "./Components/Header";
-import NavBar from "./Components/NavBar";
-import Profile from "./Components/Profile";
+import Header from "./Components/Header/Header";
+import NavBar from "./Components/Navbar/NavBar";
+import Profile from "./Components/Profile/Profile";
 
 function App() {
   return (

@@ -1,0 +1,10 @@
+.posts{
+    overflow-y: scroll;
+
+    max-height: 400px;
+    scrollbar-width: none;
+}
+
+.posts::-webkit-scrollbar{
+    display: none;
+}
