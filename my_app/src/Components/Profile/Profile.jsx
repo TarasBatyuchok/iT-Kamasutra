@@ -5,8 +5,9 @@ import styles from "./Profile.module.css";
 
 const Profile = () => {
   return (
-    <div className={styles.content}>
+    <div>
       <img
+      className={styles.img}
         src="https://assets.kpmg/is/image/kpmg/space-milky-way:cq5dam.web.1400.350"
         alt="img"
       />
