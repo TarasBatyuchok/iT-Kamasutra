@@ -8,9 +8,9 @@ import Header from "./Components/Header/Header";
 import NavBar from "./Components/Navbar/NavBar";
 import Dialogs from "./Components/Dialogs/Dialogs";
 import Profile from "./Components/Profile/Profile";
-import SettingsPage from "./Components/Profile/SettingsPage/SettingPage";
-import Music from "./Components/Profile/Music/Music";
-import News from "./Components/Profile/News/News";
+import SettingsPage from "./Components/SettingsPage/SettingPage";
+import Music from "./Components/Music/Music";
+import News from "./Components/News/News";
 
 
 function App() {

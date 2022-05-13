@@ -5,20 +5,20 @@ import style from "./Navbar.module.css";
 const NavBar = () => {
   return (
     <nav className={style.nav}>
-      <li>
-        <Link className={style.link} to="/profile">Profile</Link>
+      <li className={style.link}>
+        <Link  to="/profile">Profile</Link>
       </li>
-      <li>
-        <Link className={style.link} to="/dialogs">Message</Link>
+      <li className={style.link}>
+        <Link  to="/dialogs">Dialogs</Link>
       </li>
-      <li>
-        <Link className={style.link} to="/news">News</Link>
+      <li className={style.link}>
+        <Link  to="/news">News</Link>
       </li>
-      <li>
-        <Link className={style.link} to="/music">Music</Link>
+      <li className={style.link}>
+        <Link  to="/music">Music</Link>
       </li>
-      <li>
-        <Link className={style.link} to="/settings">Settings</Link>
+      <li className={style.link}>
+        <Link  to="/settings">Settings</Link>
       </li>
     </nav>
   );
