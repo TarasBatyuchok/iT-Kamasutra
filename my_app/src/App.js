@@ -13,15 +13,18 @@ import Music from "./Components/Music/Music";
 import News from "./Components/News/News";
 
 
-function App() {
+function App(props) {
+
+
   return (
+
     <div className="app-wrapper">
       <Header />
-      <NavBar />
+      <NavBar state={props.state.navbar}/>
       <div class="app-wrapper-content">
         <Routes>
-          <Route path="/dialogs" element={<Dialogs />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/dialogs" element={<Dialogs state={props.state.dialogsPage} />} />
+          <Route path="/profile" element={<Profile state={props.state.profilePage}/>} />
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
           <Route path="/settings" element={<SettingsPage/>} />

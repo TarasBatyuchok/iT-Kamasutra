@@ -4,14 +4,9 @@ import styles from "./MyPosts.module.css";
 
 import Post from "./Post/Post.jsx";
 
-const MyPosts = () => {
+const MyPosts = ({postData}) => {
 
-  let postData = [
-    {id:1, message: 'Hello friend', likesCount: '45'},
-    {id:2, message: "Hello i'm props", likesCount: '5'},
-  ]
-
-  let postElement = postData.map( item => <Post message={item.message} like={item.likesCount}/>)
+  let postElement = postData.map( item => <Post message={item.message} like={item.likesCount} />)
 
   return (
     <div className={styles.wrapper}>

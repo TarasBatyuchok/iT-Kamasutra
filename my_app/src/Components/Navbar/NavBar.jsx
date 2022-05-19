@@ -2,25 +2,35 @@ import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Navbar.module.css";
 
-const NavBar = () => {
+const NavBar = ({ state }) => {
+  let LinkItem = state.linkData.map((item) => {
+    return (
+      <li className={style.link}>
+        <Link to={item.route}>{item.title}</Link>
+      </li>
+    );
+  });
+  let Friend = state.friendData.map((item) => {
+    return (
+      <div className={style.friend}>
+        <div className={style.avatar}>
+          <img src={item.src} alt="img" />
+        </div>
+        <div className={style.name}>{item.name}</div>
+      </div>
+    );
+  });
+
   return (
-    <nav className={style.nav}>
-      <li className={style.link}>
-        <Link  to="/profile">Profile</Link>
-      </li>
-      <li className={style.link}>
-        <Link  to="/dialogs">Dialogs</Link>
-      </li>
-      <li className={style.link}>
-        <Link  to="/news">News</Link>
-      </li>
-      <li className={style.link}>
-        <Link  to="/music">Music</Link>
-      </li>
-      <li className={style.link}>
-        <Link  to="/settings">Settings</Link>
-      </li>
-    </nav>
+    <div className={style.nav}>
+      <nav>{LinkItem}</nav>
+      <div className={style.friendSection}>
+        <h4 className={style.title}>Your friends</h4>
+        <div className={style.containerItem}>
+          {Friend}
+        </div>
+      </div>
+    </div>
   );
 };
 
