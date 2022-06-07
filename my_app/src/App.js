@@ -12,9 +12,11 @@ import SettingsPage from "./Components/SettingsPage/SettingPage";
 import Music from "./Components/Music/Music";
 import News from "./Components/News/News";
 
-function App(props) {
+const App = (props)=> {
+
   return (
     <div className="app-wrapper">
+      
       <Header />
       <NavBar state={props.state.navbar} />
       <div className="app-wrapper-content">
