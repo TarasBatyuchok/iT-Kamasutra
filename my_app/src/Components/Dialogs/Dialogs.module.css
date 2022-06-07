@@ -1,0 +1,19 @@
+.dialogs {
+    /* задаєм параметр батьківському елементі grid */
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogItems {
+    padding: 10px;
+}
+
+/* .dialog {
+
+} */
+
+
+
+/* .message {
+
+} */

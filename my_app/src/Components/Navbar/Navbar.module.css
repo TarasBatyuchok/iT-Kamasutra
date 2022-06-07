@@ -1,0 +1,72 @@
+.nav {
+  grid-area: n;
+
+  height: 800px;
+
+  font-family: "Baloo Tammudu 2", cursive;
+
+  list-style: none;
+
+  font-size: 20px;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.friendSection{
+  width: 100%;
+  padding: 10px;
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.title{
+  text-align: center;
+  color: rgb(114, 106, 114);
+}
+
+.containerItem{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:10px
+}
+
+.friend{
+  width: 50px;
+}
+
+.avatar{
+  border-radius: 50px;
+  background-color: red;
+}
+
+.avatar img{
+  width: 100%;
+}
+
+.name{
+  font-size: 15px;
+  text-align: center;
+}

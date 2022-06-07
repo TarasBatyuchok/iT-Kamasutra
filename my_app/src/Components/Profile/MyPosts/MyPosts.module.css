@@ -1,0 +1,29 @@
+.posts {
+    overflow-y: scroll;
+
+    max-height: 350px;
+    scrollbar-width: none;
+}
+
+.posts::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    padding: 10px;
+}
+
+.wrapperTexteria {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.title {
+    padding: 10px;
+}
