@@ -4,22 +4,21 @@ import styles from "./MyPosts.module.css";
 
 import Post from "./Post/Post.jsx";
 
-const MyPosts = ({postData,addPost,newPostText,updateNewPostText}) => {
+const MyPosts = (props) => {
 
-  let postElement = postData.map( item => <Post message={item.message} like={item.likesCount} />)
+  let postElement = props.postData.map( item => <Post message={item.message} like={item.likesCount} />)
 
-  let newPostelement = React.createRef();
+  let newPostlement = React.createRef();
 // додаєм пост
   let addNewPost =()=>{
-    let text = newPostelement.current.value;
-    addPost(text)
-    updateNewPostText("");
-
+    let text = newPostlement.current.value;
+    props.addPost(text)
+    props.updateNewPostText("");
   }
 // texteria
   let onPostChange =()=>{
-    let text = newPostelement.current.value;
-    updateNewPostText(text);
+    let text = newPostlement.current.value;
+    props.updateNewPostText(text);
   }
 
 
@@ -29,7 +28,7 @@ const MyPosts = ({postData,addPost,newPostText,updateNewPostText}) => {
       <div>
         <h3 className={styles.title}>My post</h3>
         <div className={styles.wrapperTexteria}>
-          <textarea onChange={onPostChange} ref={newPostelement} value={newPostText}/>
+          <textarea onChange={onPostChange} ref={newPostlement} value={props.newPostText}/>
           <button onClick={addNewPost} className={styles.btn}>Add post</button>
         </div>
         <div>new post</div>
